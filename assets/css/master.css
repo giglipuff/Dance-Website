@@ -1,0 +1,376 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav .site-logo img{
+  width: 10%;
+  float: left;
+  height: 50px;
+}
+
+nav .btn-group{
+  margin: 0 0 0 auto;
+  width: 90%;
+  height: 50px;
+  text-align: right;
+  background-color: black;
+  /*background: linear-gradient(45deg,black 25%, red 50%, black 75%);
+  color: rgb(200,200,200);*/
+}
+
+
+
+.btn-group .button {
+    background-color: black;
+    border: none;
+    color: rgb(200,200,200);
+    background:black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    float: right;
+}
+.btn-group .button span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  color: white;
+  transition: 0.5s;
+
+}
+
+.btn-group .button span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-group .button:hover span {
+  padding-right: 25px;
+}
+
+.btn-group .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+header{
+  height: 900px;
+  position: relative;
+  background: url("../images/header-bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+header #darker{
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+}
+header img{
+  width: 100px;
+  position: absolute;
+  left: 5%;
+  top: 0.5%;
+}
+header #title-head{
+  width: 40%;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  opacity: 1;
+  transform: translate(-50%,-50%);
+}
+header #title-head h1
+{
+  text-align: center;
+  font-family: none;
+  font-size: 60px;
+  color: white;
+}
+header #title-head p{
+  text-align: center;
+  font-family:none;
+  font-size: 30px;
+  color: rgb(255,230,230);
+}
+
+
+#clearing{
+  clear: both;
+}
+
+div#styles-container h1{
+  height: auto;
+  padding-top: 60px;
+  text-align: center;
+  font-family:none;
+  color: rgb(0,0,0);
+  font-size: 50px;
+}
+
+#styles-container{
+  background: rgb(221,223,225);
+}
+#styles{
+  width: 80%;
+  margin: 0 auto;
+  height: 600px;
+  padding: 40px 0;
+}
+#styles ul{
+  list-style-type: none;
+  }
+#styles ul li{
+  float: left;
+  width: 19%;
+  margin:2.5%;
+  padding-top: 19%;
+  position: relative;
+
+  box-sizing: border-box;
+
+}
+
+div ul li#hiphop{
+   border: black 3px solid;
+   border-radius: 10px;
+   background: url("../images/break1.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   cursor: pointer;
+
+}
+div ul li#hiphop:hover{
+  opacity: 1;
+  background: url("../images/break.jpg")
+}
+
+div ul li#popping{
+   border: black 3px solid;
+   border-radius: 10px;
+   background: url("../images/popop.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   cursor: pointer;
+
+}
+div ul li#popping:hover{
+  opacity: 1;
+  background: url("../images/poppin.png")
+}
+div ul li#krump{
+   border: black 3px solid;
+   border-radius: 10px;
+   background: url("../images/krump.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   cursor: pointer;
+
+}
+div ul li#krump:hover{
+  opacity: 1;
+  background: url("../images/k3.jpg");
+  background-size: cover;
+  height:200px;
+}
+div ul li#tango{
+   border: black 3px solid;
+   border-radius: 10px;
+   background: url("../images/tango.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   cursor: pointer;
+
+}
+div ul li#tango:hover{
+  opacity: 1;
+  background: url("../images/tangot.jpg");
+  background-size: cover;
+  height:200px;
+}
+div ul li#kpd{
+   border: black 3px solid;
+   border-radius: 10px;
+   background: url("../images/mohini.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   cursor: pointer;
+
+}
+div ul li#kpd:hover{
+  opacity: 1;
+  background: url("../images/mt.jpg");
+  background-size: cover;
+  height:200px;
+}
+
+div ul li#salsa{
+   border: black 3px solid;
+   border-radius: 10px;
+   background: url("../images/salsa.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   cursor: pointer;
+
+}
+div ul li#salsa:hover{
+  opacity: 1;
+  background: url("../images/st.jpg");
+  background-size: cover;
+  height:200px;
+}
+
+div ul li#ballet{
+   border: black 3px solid;
+   border-radius: 10px;
+   background: url("../images/ballet.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   cursor: pointer;
+
+}
+div ul li#ballet:hover{
+  opacity: 1;
+  background: url("../images/bttt.jpg");
+  background-size: cover;
+  height:200px;
+}
+
+div ul li#btn{
+   border: black 3px solid;
+   border-radius: 10px;
+   background: url("../images/btn.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   cursor: pointer;
+
+}
+div ul li#btn:hover{
+  opacity: 1;
+  background: url("../images/btbtb.jpg");
+  background-size: cover;
+  height:200px;
+}
+#contact{
+  background: url("../images/maxresdefault.jpg") no-repeat top fixed;
+  background-size: cover;
+  padding: 50px 0;
+}
+#contact form{
+  margin:  0 auto;
+  padding:  50px 0;
+  width: 50%;
+  background: rgba(0,0,50,0.5);
+}
+#contact form input,
+#contact form textarea{
+  color: rgb(200,200,200);
+  display: block;
+  width: 75%;
+  margin: 20px auto;
+  background:rgba(256,256,256,0.1);
+  border: 1px solid rgb(200,200,200);
+
+}
+#contact form input{
+  height: 50px;
+  line-height: 30px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+#contact form{
+  text-align: center;
+}
+#contact form button{
+  display: block;
+  margin: auto;
+  padding: 10px 40px;
+}
+
+div form{
+  text-align: center;
+}
+div form h1{
+  text-align: center;
+  color:white;
+}
+div form #gif{
+  text-align: center;
+  background-size: cover;
+}
+div form button{
+  width:70%;
+  text-align: center;
+}
+footer{
+  text-align: center;
+  background: rgb(50,50,50);
+  color: rgb(240,240,240);
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+footer ul{
+  width:230px;
+  display: inline-block;
+  list-style-type: none;
+
+}
+footer ul li{
+  float: left;
+  padding: 10px;
+}
+footer ul li#facebook{
+  cursor: pointer;
+  padding-top: 20px;
+  width: 7%;
+  position: relative;
+  background: url("../images/fb.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top:5px;
+}
+footer ul li#insta{
+  cursor: pointer;
+  padding-top: 20px;
+  width: 7%;
+  position: relative;
+  background: url("../images/insta.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top:5px;
+}
+footer ul li#yt{
+  cursor: pointer;
+  padding-top: 20px;
+  width:7%;
+  position: relative;
+  background: url("../images/yt.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top:5px;
+}
+footer ul li#twit{
+  cursor: pointer;
+  padding-top: 20px;
+  width:7%;
+  position: relative;
+  background: url("../images/tw.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top:5px;
+}
+footer p{
+  text-align: center;
+}

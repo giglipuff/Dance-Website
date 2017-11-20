@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {
+  margin: 0;
+  background: url("bk.jpg");
+  background-size: cover;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav .site-logo img{
+  width: 10%;
+  float: left;
+  height: 50px;
+}
+
+nav .btn-group{
+  margin: 0 0 0 auto;
+  width: 90%;
+  height: 50px;
+  text-align: right;
+  text-decoration: none;
+  background-color: black;
+  /*background: linear-gradient(45deg,black 25%, red 50%, black 75%);
+  color: rgb(200,200,200);*/
+}
+
+
+
+.btn-group .button {
+    background-color: black;
+    border: none;
+    color: rgb(200,200,200);
+    background:black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    float: right;
+}
+.btn-group .button span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  text-decoration: none;
+
+}
+
+.btn-group .button span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.btn-group .button:hover span {
+  padding-right: 25px;
+}
+
+.btn-group .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+div.name{
+     background-color:#393B3A;
+     color:#C6B9BE;
+     font-size:300%;
+     padding-bottom:0.1%;
+     width:100%;
+               }
+
+img.logo{height:60px;
+    }
+#move{
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position:relative;
+    margin-top:10px;
+    margin-left: 400px;
+    animation-name: moveit;
+    animation-duration: 0.4s;
+}
+#hari{
+    width: 250px;
+    height: 250px;
+    border: 3px solid black;
+    filter: opacity(0.9);
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 652px;
+    background-image: url("hari.jpg");
+    background-size: cover;
+    animation-name: show1;
+    animation-duration: 0.4s;
+}
+#hariinf{
+    width: 350px;
+    height: 250px;
+    border: 3px solid black;
+    filter: opacity(0.8);
+    font-size:15px;
+    border-radius: 3.5px;
+    position: absolute;
+    font-family: 'Sofia';
+    margin-top: 8px;
+    margin-left: 922px;
+    background-color: black;
+    color:#C1ABB4;
+    animation-name: show1;
+    animation-duration: 0.4s;
+}
+#harsh{
+    width: 250px;
+    height: 250px;
+    border: 3px solid black;
+    filter: opacity(0.9);
+    border-radius: 5px;
+    position:absolute;
+    margin-top: 0;
+    margin-left:652px;
+    background-image: url("harsh.jpg");
+    background-size: cover;
+    animation-name: show2;
+    animation-duration: 0.4s;
+}
+#harshinf{
+    width: 350px;
+    height: 250px;
+    border: 3px solid black;
+    filter: opacity(0.8);
+    font-size:15px;
+    border-radius: 5px;
+    position:absolute;
+    margin-top: 5px;
+    color:white;
+    margin-left:922px;
+    background-color:black;
+    animation-name: show2;
+    animation-duration: 0.4s;
+}
+#satya{
+    width: 250px;
+    height: 250px;
+    border: 3px solid black;
+    filter: opacity(1);
+    border-radius: 5px;
+    position:absolute;
+    margin-top: 0;
+    margin-left:400px;
+    background-image: url("satya.jpg");
+    background-size: cover;
+    animation-name: show3;
+    animation-duration: 0.4s;
+}
+#satyainf{
+    width: 350px;
+    height: 250px;
+    border: 3.5px solid black;
+    filter: opacity(0.8);
+    font-size:15px;
+    border-radius: 2px;
+    position:absolute;
+    margin-top: 5px;
+    color:white;
+    margin-left:25px;
+    background-color: black;
+    animation-name: show4;
+    animation-duration: 0.4s;
+}
+#black{
+    width: 250px;
+    height: 250px;
+    border: 3px solid black;
+    filter: opacity(0.9);
+    border-radius: 5px;
+    position:absolute;
+    margin-top: 10px;
+    margin-left:400px;
+    color:white;
+    background-size: cover;
+    text-align:center;
+    background-image: url("ballet.gif")
+}
+#blackinf{
+    width: 350px;
+    height: 250px;
+    border: 3px solid black;
+    filter: opacity(0.8);
+    border-radius: 5px;
+    font-family: 'Sofia';
+    position:absolute;
+    color:white;
+    margin-top: 10px;
+    margin-left:25px;
+    color:white;
+    text-align:center;
+    background-color: black;
+}
+@keyframes show4{
+       0%   {filter: opacity(0);}
+    25%  {filter: opacity(0);}
+    50%  {filter: opacity(0);}
+    75%  {filter: opacity(0);}
+    98% {filter: opacity(0.8);}
+}
+@keyframes show3{
+       0%   {filter: opacity(0);}
+    25%  {filter: opacity(0);}
+    50%  {filter: opacity(0);}
+    75%  {filter: opacity(0);}
+    98% {filter: opacity(0.8);}
+}
+pre{font-family:'Covered By Your Grace';}
+@keyframes show1{
+       0%   {filter: opacity(0);}
+    25%  {filter: opacity(0);}
+    50%  {filter: opacity(0);}
+    68%  {filter: opacity(0.8);}
+    100% {filter: opacity(0.8);}
+}
+@keyframes show2{
+       0%   {filter: opacity(0);}
+    25%  {filter: opacity(0);}
+    47%  {filter: opacity(0.8);}
+    68%  {filter: opacity(0.8);}
+    100% {filter: opacity(0.8);}
+}
+@keyframes moveit{
+    0%   {left:0px; top:0px;}
+    25%  {left:250px; top:252px;}
+    50%  {left:250px; top:0px;}
+    75%  {left:0px; top:252px;}
+    100% {left:0px; top:0px;}
+}
+
+footer{
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  margin-top: 24.2%;
+  background: rgb(50,50,50);
+  color: rgb(240,240,240);
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+footer ul{
+  width:230px;
+  display: inline-block;
+  list-style-type: none;
+
+}
+footer ul li{
+  float: left;
+  padding: 10px;
+}
+footer ul li#facebook{
+  cursor: pointer;
+  padding-top: 20px;
+  width: 7%;
+  position: relative;
+  background: url("../assets/images/fb.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top:5px;
+}
+footer ul li#insta{
+  cursor: pointer;
+  padding-top: 20px;
+  width: 7%;
+  position: relative;
+  background: url("../assets/images/insta.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top:5px;
+}
+footer ul li#yt{
+  cursor: pointer;
+  padding-top: 20px;
+  width:7%;
+  position: relative;
+  background: url("../assets/images/yt.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top:5px;
+}
+footer ul li#twit{
+  cursor: pointer;
+  padding-top: 20px;
+  width:7%;
+  position: relative;
+  background: url("../assets/images/tw.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top:5px;
+}
+footer p{
+  text-align: center;
+}
+</style>
+</head>
+<body>
+	<nav>
+      <a href="#"></a>
+      <span class="site-logo">
+      <a href="../master.php"><img src="../assets/images/logo.png" alt="w.o.d"></a>
+      </span>
+  <div class="btn-group">
+    <!-- <a href="C:\Users\Sree Hari K\Desktop\class notes\DANCE WEBSITE\abt\abtus.html"></a> -->
+    <button class="button" id="contct"><a href="../contact.html" style="color:white"><span>Contact</span></a></button>
+    <button class="button" id="abt"><span>About Us</span></button>
+    <button class="button" id="sgnin"><a href="../login.php" style="color:white"><span>Sign-In</span></a></button>
+    <button class="button" id="sgnup"><a href="../register.php" style="color:white"><span>Sign-Up</span></a></button>
+
+  </div>
+    </nav>
+
+<div id="hari"></div>
+<div id="hariinf"><pre>
+
+
+
+             Name:Sree Hari K
+             USN:01FB16ECS154
+             Second Year B-tech CSE
+             Section-C</pre></div>
+<div id="black"></div>
+<div id="blackinf" ><pre>
+
+ Dance is one of the most expressive art form,
+ and there are millions of people who love
+ dancing but don't know where to start. Our
+ objective was to let everyone who loves dancing
+ learn the art from the best choreographers in
+ the world right from the basics. This website
+ has everything one needs to get up to speed
+ with our available dance forms.
+ HAPPY DANCING!</pre>
+                        </div>
+<div id="move"></div>
+<div id="satya"></div>
+<div id="satyainf"><pre>
+
+
+
+           Name:G Satyabhama Reddy
+           USN:01FB16ECS124
+           Second Year B-tech CSE
+           Section-C</pre></div>
+<div id="harsh"></div>
+<div id="harshinf"><pre>
+
+
+
+            Name:Harshith Gowda
+            USN:01FB17ECS713
+            Second Year B-tech CSE
+            Section-C</pre></div>
+</body>
+<footer>
+  <ul>
+    <a href="https://www.facebook.com/worldofdancephilippines/" target="_blank"><li id="facebook"></li></a>
+    <li>|</li>
+    <a href="https://www.instagram.com/worldofdance/?hl=en" target="_blank"><li id="insta"></li></a>
+    <li>|</li>
+    <a href="https://www.youtube.com/user/WORLDOFDANCETOUR" target="_blank"><li id="yt"></li></a>
+    <li>|</li>
+    <a href="https://twitter.com/nbcworldofdance?lang=en" target="_blank"><li id="twit"></li></a>
+  </ul>
+  <br>
+  <p>© 2017 World Of Dance | All Rights Reserved</p>
+</footer>
+<script type="text/javascript">
+</script>
+</html>
